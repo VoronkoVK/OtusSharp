@@ -4,10 +4,14 @@ public class Offer
 {
     public int Id { get; set; }
 
-    public required User Author { get; set; }
-    public required Category Category { get; set; }
+    public required int AuthorId { get; set; }
+    public required int CategoryId { get; set; }
 
     public required string Title { get; set; }
-    public string? Description { get; set; }
-    public float Cost { get; set; }
+    public decimal Cost { get; set; }
+    
+    public override string ToString()
+    {
+        return $"Offer: Id={Id}, AuthorId={AuthorId}, CategoryId={CategoryId}, Title={Title}, Cost={Cost}";
+    }
 }
