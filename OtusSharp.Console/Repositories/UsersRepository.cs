@@ -22,7 +22,7 @@ public class UsersRepository
         return users.AsReadOnly();
     }
     
-    public bool InsertUser(string name, string email)
+    public bool CreateUser(string name, string email)
     {
         try
         {

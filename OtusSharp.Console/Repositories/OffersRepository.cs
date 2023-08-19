@@ -22,7 +22,7 @@ public class OffersRepository
         return offers.AsReadOnly();
     }
 
-    public bool InsertOffer(int authorId, int categoryId, string title, decimal cost)
+    public bool CreateOffer(int authorId, int categoryId, string title, decimal cost)
     {
         try
         {

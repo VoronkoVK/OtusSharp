@@ -1,3 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using OtusSharp.Console.Views;
 
-Console.WriteLine("Hello, World!");
+var menu = new MenuView();
+menu.Show();

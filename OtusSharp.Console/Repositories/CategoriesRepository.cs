@@ -22,7 +22,7 @@ public class CategoriesRepository
         return categories;
     }
     
-    public bool InsertCategory(string title)
+    public bool CreateCategory(string title)
     {
         try
         {
